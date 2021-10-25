@@ -27,7 +27,7 @@
 <?rfc subcompact="no" ?>
 <!-- keep one blank line between list items -->
 <!-- end of list of popular I-D processing instructions -->
-<rfc xmlns:xi="http://www.w3.org/2001/XInclude" category="exp" docName="draft-irtf-icnrg-icntraceroute-01" ipr="trust200902" obsoletes="" updates="" submissionType="IETF" xml:lang="en" tocInclude="true" tocDepth="4" symRefs="true" sortRefs="true" version="3">
+<rfc xmlns:xi="http://www.w3.org/2001/XInclude" category="exp" docName="draft-irtf-icnrg-icntraceroute-02" ipr="trust200902" obsoletes="" updates="" submissionType="IETF" xml:lang="en" tocInclude="true" tocDepth="4" symRefs="true" sortRefs="true" version="3">
   <!-- xml2rfc v2v3 conversion 2.40.1 -->
   <!-- category values: std, bcp, info, exp, and historic
      ipr values: full3667, noModification3667, noDerivatives3667
@@ -41,7 +41,7 @@
          full title is longer than 39 characters -->
 
     <title abbrev="ICN Traceroute">ICN Traceroute Protocol Specification</title>
-    <seriesInfo name="Internet-Draft" value="draft-irtf-icnrg-icntraceroute-01"/>
+    <seriesInfo name="Internet-Draft" value="draft-irtf-icnrg-icntraceroute-02"/>
     <!-- add 'role="editor"' below for the editors if appropriate -->
 
     <!-- Another author who claims to be an editor -->
@@ -121,7 +121,7 @@
         <!-- uri and facsimile elements may also be added -->
     </address>
     </author>
-    <date  year="2020"/>
+    <date  year="2021"/>
     <!-- If the month and year are both specified and are the current ones, xml2rfc will fill
          in the current day for you. If only the current year is specified, xml2rfc will fill
 	 in the current day and month for you. If the year is not the current one, it is
