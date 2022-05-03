@@ -173,19 +173,28 @@
       forwarders and delays) of at least one of the available routes to a name
       prefix is a fundamendal requirement for instumentation and network management.</t>
 
-      <t> This document describes protocol mechanisms for a traceroute equivalent in
-      ICN networks based on <xref target="RFC8569">CCNx</xref> or <xref target="NDNTLV">NDN</xref>). The document also contains a non-normative
-      appendix section suggesting useful properties for an ICN traceroute client
-      application that originates traceroute requests and processes traceroute
-      replies.</t>
+			<t> In order to carry out meaningful experimentation and deployment of ICN
+				protocols, tools to manage and debug the operation of ICN architectures and
+				protocols are needed analogous to ping and traceroute used for TCP/IP.
+				This document describes the design of a management and debugging protocol
+				analogous to the traceroute protocol of TCP/IP, which will aid
+				the experimental deployment of ICN protocols. As the community continues its
+				experimentation with ICN architectures and protocols, the design of ICN Traceroute
+				might change accordingly. ICN Traceroute is designed as a tool to troubleshoot
+				ICN architectures and protocols. As such, this document is
+				classified as an experimental RFC.</t>
 
-			<t> This document describes a management and debugging protocol that will aid
-				the experimental deployment of ICN protocols. As such, this document is
-				classified as an experimental RFC. This document has been reviewed,
-				commented on, and discussed by ICNRG members. ICNRG as a group certainly
-				exceeds 100 individuals.  It is the consensus of ICNRG that the experimental
-				protocol described in this document should be published in the IRTF stream
-				of the RFC series. This document does not constitute a standard. </t>
+				<t>This document is not an Internet Standards Track specification; it is
+					published for examination, experimental implementation, and evaluation.
+					This document defines an Experimental Protocol for the Internet
+					community. This document is a product of the Internet Research Task
+					Force (IRTF). The IRTF publishes the results of Internet-related
+					research and development activities. These results might not be
+					suitable for deployment. This RFC represents the consensus of the
+					Information-Centric Networking Research Group of the Internet
+					Research Task Force (IRTF). Documents approved for publication by
+					the IRSG are not candidates for any level of Internet Standard; see
+					Section 2 of RFC 7841.</t>
 
       <section numbered="true" toc="default">
         <name>Requirements Language</name>
@@ -628,6 +637,12 @@
 
       <t>We also note that traceroute requests have the same privacy characteristics as regular Interests.</t>
     </section>
+
+		<section anchor="IANA" numbered="true" toc="default">
+			<name>IANA Considerations</name>
+			<t>The exact numeric values of the field types of Traceroute requests and Traceroute replies are to be assigned in the Packet Type IANA Registry for CCNx
+			(see section 4.1 of <xref target="RFC8569" format="default"/>. </t>
+		</section>
   </middle>
   <!--  *****BACK MATTER ***** -->
 
