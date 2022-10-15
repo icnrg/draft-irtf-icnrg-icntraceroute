@@ -287,7 +287,7 @@
         desirable that ICN traceroute be able to discover a number of paths towards the
         expressed prefix within the same session or subsequent sessions. To discover
         all the hops in a path, we need a mechanism (Interest Steering) to steer
-        requests along different paths. Such a capability was initially published in  <xref target="PATHSTEERING" format="default"/> and has been specified for CCNx in <xref target="I-D.oran-icnrg-pathsteering"/>.</t>
+        requests along different paths. Such a capability was initially published in  <xref target="PATHSTEERING" format="default"/> and has been specified for CCNx in <xref target="I-D.draft-oran-icnrg-pathsteering"/>.</t>
 
       <t>It is also important, in the case of traceroute requests for the same prefix from different sources, to have a mechanism to avoid aggregating those requests in the PIT. To this end, we need some encoding in the traceroute requests to make each request for a common prefix unique, and hence avoid PIT aggregation and further enabling the exact matching of a response with a particular traceroute packet.</t>
 
@@ -337,7 +337,7 @@
       <xref target="RFC8609" format="default"/>, there is a new  optional fixed header added to the packet header:</t>
 
         <ul spacing="normal">
-          <li>A Path Steering hop-by-hop header TLV, which is constructed hop-by-hop	 in the traceroute reply and included in the traceroute request to steer consecutive requests expressed by a client towards a common or different forwarding paths. The Path label TLV is specified in <xref target="I-D.oran-icnrg-pathsteering"/> </li>
+          <li>A Path Steering hop-by-hop header TLV, which is constructed hop-by-hop	 in the traceroute reply and included in the traceroute request to steer consecutive requests expressed by a client towards a common or different forwarding paths. The Path label TLV is specified in <xref target="I-D.draft-oran-icnrg-pathsteering"/> </li>
         </ul>
 
         <t>The message of a traceroute request is presented below:</t>
@@ -532,7 +532,7 @@
         </figure>
 
         <t>The name of a request consists of the target name, a nonce value (it can be the value of the Nonce field) and the suffix "traceroute" to denote that this Interest is a traceroute request (added as a KeywordNameComponent). When the "ApplicationParameters" element is present, a ParametersSha256DigestComponent is added as the last name component.</t>
-        <t>The "ApplicationParameters" field of the Request contains the a Path label TLV as specified in <xref target="I-D.oran-icnrg-pathsteering"/>.</t>
+        <t>The "ApplicationParameters" field of the Request contains the a Path label TLV as specified in <xref target="I-D.draft-oran-icnrg-pathsteering"/>.</t>
         <t>Since the NDN packet format does not provide a mechanism to prevent the network from caching specific  data packets, we instead use the MustBeFresh selector for requests (in combination with a Freshness Period TLV of value 1 for replies) to avoid fetching cached traceroute replies with a freshness period that has expired <xref target="REALTIME" format="default"/>.</t>
 
       </section>
