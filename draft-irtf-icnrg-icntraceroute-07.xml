@@ -532,7 +532,7 @@
         </figure>
 
         <t>The name of a request consists of the target name, a nonce value (it can be the value of the Nonce field) and the suffix "traceroute" to denote that this Interest is a traceroute request (added as a KeywordNameComponent). When the "ApplicationParameters" element is present, a ParametersSha256DigestComponent is added as the last name component.</t>
-        <t>The "ApplicationParameters" field of the Request contains the a Path label TLV as specified in <xref target="I-D.draft-oran-icnrg-pathsteering"/>.</t>
+        <t>A traceroute request MAY carry a Path label TLV in the <xref target="NDNLPv2">NDN Link Adaptation Protocol</xref> as specified in <xref target="I-D.irtf-icnrg-pathsteering"/>.</t>
         <t>Since the NDN packet format does not provide a mechanism to prevent the network from caching specific  data packets, we instead use the MustBeFresh selector for requests (in combination with a Freshness Period TLV of value 1 for replies) to avoid fetching cached traceroute replies with a freshness period that has expired <xref target="REALTIME" format="default"/>.</t>
 
       </section>
@@ -548,11 +548,11 @@
                         MetaInfo
                         Content
                         Signature
-												Path label TLV
 	        ]]></artwork>
         </figure>
 
-        <t>Compared to the format of a regular NDN Data packet, a traceroute reply contains a Path label TLV field, which is not included in the security envelope, since it might be modified in a hop-by-hop fashion by
+        <t>A traceroute reply MAY carry a Path label TLV in the <xref target="NDNLPv2">NDN Link Adaptation Protocol</xref>
+					as specified in <xref target="I-D.irtf-icnrg-pathsteering"/>, since it might be modified in a hop-by-hop fashion by
       the forwarders along the reverse path.</t>
 
         <t>The name of a traceroute reply is the name of the corresponding traceroute request, while the format of the MetaInfo field is the following:</t>
@@ -731,6 +731,14 @@
             <date year="2017"/>
           </front>
           <refcontent>in Proceedings of the 1st IEEE International Conference on Hot Topics in Information-Centric Networking</refcontent>
+        </reference>
+
+				<reference anchor="NDNLPv2" target="https://redmine.named-data.net/projects/nfd/wiki/NDNLPv2">
+           <front>
+             <title>Named Data Networking Link Adaptation Protocol v2</title>
+             <author surname="NDN team"/>
+             <date>various</date>
+           </front>
         </reference>
 
     </references>
