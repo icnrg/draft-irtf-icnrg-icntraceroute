@@ -1,32 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
-<!-- This template is for creating an Internet Draft using xml2rfc,
-     which is available here: http://xml.resource.org. -->
-<!DOCTYPE rfc SYSTEM "rfc2629-xhtml.ent">
 <?xml-stylesheet type='text/xsl' href='rfc2629.xslt' ?>
-<!-- used by XSLT processors -->
-<!-- For a complete list and description of processing instructions (PIs),
-     please see http://xml.resource.org/authoring/README.html. -->
-<!-- Below are generally applicable Processing Instructions (PIs) that most I-Ds might want to use.
-     (Here they are set differently than their defaults in xml2rfc v1.32) -->
 <?rfc strict="yes" ?>
-<!-- give errors regarding ID-nits and DTD validation -->
-<!-- control the table of contents (ToC) -->
-<?rfc toc="yes"?>
-<!-- generate a ToC -->
-<?rfc tocdepth="4"?>
-<!-- the number of levels of subsections in ToC. default: 3 -->
-<!-- control references -->
-<?rfc symrefs="yes"?>
-<!-- use symbolic references tags, i.e, [RFC2119] instead of [1] -->
-<?rfc sortrefs="yes" ?>
-<!-- sort the reference entries alphabetically -->
-<!-- control vertical white space
-     (using these PIs as follows is recommended by the RFC Editor) -->
 <?rfc compact="yes" ?>
-<!-- do not start each main section on a new page -->
 <?rfc subcompact="no" ?>
-<!-- keep one blank line between list items -->
-<!-- end of list of popular I-D processing instructions -->
+
 <rfc
 	xmlns:xi="http://www.w3.org/2001/XInclude"
 	category="exp"
@@ -42,25 +19,13 @@
 	sortRefs="true"
 	version="3">
 
-  <!-- xml2rfc v2v3 conversion 2.40.1 -->
-  <!-- category values: std, bcp, info, exp, and historic
-     ipr values: full3667, noModification3667, noDerivatives3667
-     you can add the attributes updates="NNNN" and obsoletes="NNNN"
-     they will automatically be output with "(if approved)" -->
 
-  <!-- ***** FRONT MATTER ***** -->
+<front>
 
-  <front>
-    <!-- The abbreviated title is used in the page header - it is only necessary if the
-         full title is longer than 39 characters -->
-
-    <title abbrev="ICN Traceroute">ICN Traceroute Protocol Specification</title>
-    <seriesInfo name="Internet-Draft" value="draft-irtf-icnrg-icntraceroute-07"/>
-    <!-- add 'role="editor"' below for the editors if appropriate -->
-
-    <!-- Another author who claims to be an editor -->
-
-<author fullname="Spyridon Mastorakis" initials="S" surname="Mastorakis">
+  <title abbrev="ICN Traceroute">ICN Traceroute Protocol Specification</title>
+  <seriesInfo name="Internet-Draft" value="draft-irtf-icnrg-icntraceroute-07"/>
+  
+  <author fullname="Spyridon Mastorakis" initials="S" surname="Mastorakis">
       <organization>University of Nebraska at Omaha</organization>
       <address>
         <postal>
@@ -75,52 +40,8 @@
         <!-- uri and facsimile elements may also be added -->
     </address>
     </author>
-    <author fullname="Jim Gibson" initials="J" surname="Gibson">
-      <organization>Cisco Systems</organization>
-      <address>
-        <postal>
-          <street/>
-          <!-- Reorder these if your country does things differently -->
-            <city>Cambridge</city>
-          <region>MA</region>
-          <code/>
-          <country>US</country>
-        </postal>
-        <email>gibson@cisco.com</email>
-        <!-- uri and facsimile elements may also be added -->
-    </address>
-    </author>
-    <author fullname="Ilya Moiseenko" initials="I" surname="Moiseenko">
-      <organization>Apple Inc</organization>
-      <address>
-        <postal>
-          <street/>
-          <!-- Reorder these if your country does things differently -->
-            <city>Cupertino</city>
-          <region>CA</region>
-          <code/>
-          <country>US</country>
-        </postal>
-        <email>iliamo@mailbox.org</email>
-        <!-- uri and facsimile elements may also be added -->
-    </address>
-    </author>
-    <author fullname="Ralph Droms" initials="R" surname="Droms">
-      <organization>Unaffiliated</organization>
-      <address>
-        <postal>
-          <street/>
-          <!-- Reorder these if your country does things differently -->
-            <city>Hopkinton</city>
-          <region>MA</region>
-          <code/>
-          <country>US</country>
-        </postal>
-        <email>rdroms.ietf@gmail.com</email>
-        <!-- uri and facsimile elements may also be added -->
-    </address>
-    </author>
-    <author fullname="Dave Oran" initials="D" surname="Oran">
+
+  <author fullname="Dave Oran" initials="D" surname="Oran">
       <organization>Network Systems Research and Design</organization>
       <address>
         <postal>
@@ -134,78 +55,90 @@
         <email>daveoran@orandom.net</email>
         <!-- uri and facsimile elements may also be added -->
     </address>
-    </author>
-    <date  year="2022"/>
-    <!-- If the month and year are both specified and are the current ones, xml2rfc will fill
-         in the current day for you. If only the current year is specified, xml2rfc will fill
-	 in the current day and month for you. If the year is not the current one, it is
-	 necessary to specify at least a month (xml2rfc assumes day="1" if not specified for the
-	 purpose of calculating the expiry date).  With drafts it is normally sufficient to
-	 specify just the year. -->
+  </author>
 
-    <!-- Meta-data Declarations -->
+  <author fullname="Ilya Moiseenko" initials="I" surname="Moiseenko">
+      <organization>Apple Inc</organization>
+      <address>
+        <postal>
+          <street/>
+          <!-- Reorder these if your country does things differently -->
+            <city>Cupertino</city>
+          <region>CA</region>
+          <code/>
+          <country>US</country>
+        </postal>
+        <email>iliamo@mailbox.org</email>
 
-    <area>IRTF</area>
-    <workgroup>ICNRG</workgroup>
-    <!-- WG name at the upperleft corner of the doc,
-         IETF is fine for individual submissions.
-	 If this element is not present, the default is "Network Working Group",
-         which is used by the RFC Editor as a nod to the history of the IETF. -->
+    </address>
+  </author>  
+  
+  <author fullname="Jim Gibson" initials="J" surname="Gibson">
+      <organization>Unaffiliated</organization>
+      <address>
+        <postal>
+          <street/>
 
-    <keyword>template</keyword>
-    <!-- Keywords will be incorporated into HTML output
-         files in a meta tag but they have no effect on text or nroff
-         output. If you submit your draft to the RFC Editor, the
-         keywords will be used for the search engine. -->
+            <city>Belmont</city>
+          <region>MA</region>
+          <code/>
+          <country>US</country>
+        </postal>
+        <email>jcgibson61@gmail.com</email>
+    </address>
+  </author>
 
-    <abstract>
-      <t>This document presents the design of an ICN Traceroute protocol. This includes the operation of both the client and the forwarder.
-			This document is a product of the IRTF Information-Centric Networking Research Group (ICNRG). </t>
-    </abstract>
-  </front>
-  <middle>
-    <section numbered="true" toc="default">
-      <name>Introduction</name>
-      <t>In TCP/IP, routing and forwarding are based on IP addresses. To ascertain
+  <author fullname="Ralph Droms" initials="R" surname="Droms">
+      <organization>Unaffiliated</organization>
+      <address>
+        <postal>
+          <street/>
+          <city>Hopkinton</city>
+          <region>MA</region>
+          <code/>
+          <country>US</country>
+        </postal>
+        <email>rdroms.ietf@gmail.com</email>
+    </address>
+  </author>
+
+  <date  year="2022"/>
+
+  <area>IRTF</area>
+  <workgroup>ICNRG</workgroup>
+
+  <keyword>ICN</keyword>
+  <keyword>Network Management</keyword>
+
+  <abstract>
+    <t>This document presents the design of an ICN Traceroute protocol. This includes the operation of both the client and the forwarder.</t>
+    
+	<t>This document is a product of the Information-Centric Networking Research Group (ICNRG) of the IRTF.</t>
+  </abstract>
+  
+</front>
+
+<middle>
+  <section><name>Introduction</name>
+    <t>In TCP/IP, routing and forwarding are based on IP addresses. To ascertain
       the route to an IP address and to measure the transit delays, the traceroute
       utility is commonly used. In ICN, routing and forwarding are based on name prefixes.
       To this end, the problem of ascertaining the characteristics (i.e., transit
       forwarders and delays) of at least one of the available routes to a name
       prefix is a fundamendal requirement for instrumentation and network management.</t>
 
-			<t> In order to carry out meaningful experimentation and deployment of ICN
-				protocols, tools to manage and debug the operation of ICN architectures and
-				protocols are needed analogous to ping and traceroute used for TCP/IP.
-				This document describes the design of a management and debugging protocol
-				analogous to the traceroute protocol of TCP/IP, which will aid
-				the experimental deployment of ICN protocols. As the community continues its
-				experimentation with ICN architectures and protocols, the design of ICN Traceroute
-				might change accordingly. ICN Traceroute is designed as a tool to troubleshoot
-				ICN architectures and protocols. As such, this document is
-				classified as an experimental RFC.</t>
+	<t>In order to carry out meaningful experimentation and deployment of ICN				protocols, tools to manage and debug the operation of ICN architectures and				protocols are needed analogous to ping and traceroute used for TCP/IP.				This document describes the design of a management and debugging protocol				analogous to the traceroute protocol of TCP/IP, which will aid the experimental deployment of ICN protocols. As the community continues its	experimentation with ICN architectures and protocols, the design of ICN Traceroute might change accordingly. ICN Traceroute is designed as a tool to troubleshoot ICN architectures and protocols. As such, this document is classified as an experimental RFC.</t>
+	
+	<t>This specification uses the terminology defined in <xref target="RFC8793"/>.</t>
 
-				<t>This document is not an Internet Standards Track specification; it is
-					published for examination, experimental implementation, and evaluation.
-					This document defines an Experimental Protocol for the Internet
-					community. This document is a product of the Internet Research Task
-					Force (IRTF). The IRTF publishes the results of Internet-related
-					research and development activities. These results might not be
-					suitable for deployment. This RFC represents the consensus of the
-					Information-Centric Networking Research Group of the Internet
-					Research Task Force (IRTF). Documents approved for publication by
-					the IRSG are not candidates for any level of Internet Standard; see
-					Section 2 of RFC 7841.</t>
+	<t>This document is not an Internet Standards Track specification; it is					published for examination, experimental implementation, and evaluation.					This document defines an Experimental Protocol for the Internet	community. This document is a product of the Internet Research Task	Force (IRTF). The IRTF publishes the results of Internet-related	research and development activities. These results might not be suitable for deployment. This RFC represents the consensus of the Information-Centric Networking Research Group of the Internet Research Task Force (IRTF). Documents approved for publication by the IRSG are not candidates for any level of Internet Standard; see	Section 2 of RFC 7841.</t>
 
-      <section numbered="true" toc="default">
-        <name>Requirements Language</name>
-        <t>The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
-        "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this
-        document are to be interpreted as described in <xref target="RFC2119" format="default"/>.</t>
-      </section>
+  	<section><name>Requirements Language</name>
+    	<t>The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",        "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in <xref target="RFC2119"/>.</t>
     </section>
+  </section>
 
-    <section numbered="true" toc="default">
-      <name>Background on IP-Based Traceroute Operation</name>
+  <section><name>Background on IP-Based Traceroute Operation</name>
       <t>In IP-based networks, traceroute is based on the expiration of the Time To Live (TTL) IP header field. Specifically, a traceroute client sends consecutive packets (depending on the implementation and the user-specified behavior such packets can be either UDP datagrams, ICMP Echo Request or TCP SYN packets) with a TTL value increased by 1, essentially performing a expanding ring search. In this way, the first IP packet sent will expire at the first router along the path, the second IP packet at the second router along the path, etc, until the router (or host) with the specified destination IP address is reached. Each router along the path towards the destination, responds by sending back an ICMP Time Exceeded packet, unless explicitly prevented from doing so by a security policy.</t>
 
       <t>The IP-based traceroute utility operates on IP addresses, and in particular
@@ -214,7 +147,7 @@
       rather than destination IP addresses, that the names do not
       refer to unique endpoints (multi-destination), and that the packets
       do not contain source addresses, a substantially different approach is needed.</t>
-    </section>
+  </section>
 
     <section anchor="challenges" numbered="true" toc="default">
       <name>Traceroute Functionality Challenges and Opportunities in ICN</name>
@@ -226,27 +159,13 @@
 
       <t>An ICN network differs from an IP network in at least 4 important ways:</t>
       <ul spacing="normal">
-        <li>IP identifies interfaces to an IP network with a fixed-length
-              address, and delivers IP packets to one or more interfaces. ICN
-              identifies units of data in the network with a variable length name
-              consisting of a hierarchical list of components.</li>
-        <li>An IP-based network depends on the IP packets having source IP
-	      addresses that are used as the destination address for replies. On the other hand, ICN Interests do not have source addresses and they are forwarded based on names, which do not refer to a unique end-point. Data packets follow the reverse path of the Interests based on hop-by-hop state created during Interest forwarding.</li>
+        <li>IP identifies interfaces to an IP network with a fixed-length address, and delivers IP packets to one or more interfaces. ICN identifies units of data in the network with a variable length name consisting of a hierarchical list of components.</li>
+        
+        <li>An IP-based network depends on the IP packets having source IP	      addresses that are used as the destination address for replies. On the other hand, ICN Interests do not have source addresses and they are forwarded based on names, which do not refer to a unique end-point. Data packets follow the reverse path of the Interests based on hop-by-hop state created during Interest forwarding.</li>
 
-        <li>An IP network supports multi-path, single destination, stateless packet forwarding and delivery via unicast, a limited form of
-	      multi-destination selected delivery with anycast, and group-based
-	      multi-destination delivery via multicast. In contrast, ICN supports
-	      multi-path and multi-destination stateful Interest forwarding and
-	      multi-destination data delivery to units of named data.  This single
-	      forwarding semantic subsumes the functions of unicast, anycast, and
-	      multicast.  As a result, consecutive (or retransmitted) ICN Interest
-	      messages may be forwarded through an ICN network along different
-	      paths, and may be forwarded to different data sources (e.g., end-node
-	      applications, in-network storage) holding a copy of the
-	      requested unit of data. The ability to discover multiple available
-	      (or potentially all) paths towards a name prefix is a desirable capability for an ICN traceroute protocol, since it can be beneficial for congestion control purposes. Knowing the number of available paths for a name can also be useful in cases that Interest forwarding based on application semantics/preferences is desirable.</li>
-        <li>In the case of multiple Interests with the same name arriving
-              at a forwarder, a number of Interests may be aggregated in a common Pending Interest Table (PIT) entry. Depending on the lifetime of a PIT entry, the round-trip time an Interest-Data exchange might significantly vary (e.g., it might be shorter than the full round-trip time to reach the original content producer). To this end, the round-trip time experienced by consumers might also vary even under constant network load.</li>
+        <li>An IP network supports multi-path, single destination, stateless packet forwarding and delivery via unicast, a limited form of multi-destination selected delivery with anycast, and group-based multi-destination delivery via multicast. In contrast, ICN supports multi-path and multi-destination stateful Interest forwarding and multi-destination data delivery to units of named data.  This single forwarding semantic subsumes the functions of unicast, anycast, and	      multicast.  As a result, consecutive (or retransmitted) ICN Interest messages may be forwarded through an ICN network along different paths, and may be forwarded to different data sources (e.g., end-node applications, in-network storage) holding a copy of the requested unit of data. The ability to discover multiple available	      (or potentially all) paths towards a name prefix is a desirable capability for an ICN traceroute protocol, since it can be beneficial for congestion control purposes. Knowing the number of available paths for a name can also be useful in cases that Interest forwarding based on application semantics/preferences is desirable.</li>
+        
+        <li>In the case of multiple Interests with the same name arriving at a forwarder, a number of Interests may be aggregated in a common Pending Interest Table (PIT) entry. Depending on the lifetime of a PIT entry, the round-trip time an Interest-Data exchange might significantly vary (e.g., it might be shorter than the full round-trip time to reach the original content producer). To this end, the round-trip time experienced by consumers might also vary even under constant network load.</li>
       </ul>
 
       <t>These differences introduce new challenges, new opportunities and new
@@ -255,61 +174,42 @@
       directed to a name prefix and receive responses.</t>
 
       <t>Our goals are the following:</t>
-      <ul spacing="normal">
-        <li>Trace one or more paths towards an ICN forwarder (for troubleshooting
-	purposes).</li>
+      <ul>
+        <li>Trace one or more paths towards an ICN forwarder (for troubleshooting	purposes).</li>
         <li>Trace one or more paths along which an named data of an application can be reached in the sense that Interest packets can be forwarded toward it.</li>
-        <li>Test whether a specific named object is cached in some on-path CS,
-	and, if so, trace the path towards it and return the identity of the
-	corresponding forwarder.</li>
+        <li>Test whether a specific named object is cached in some on-path CS, and, if so, trace the path towards it and return the identity of the corresponding forwarder.</li>
         <li>Perform transit delay network measurements.</li>
       </ul>
 
       <t>To this end, a traceroute target name can represent:</t>
-      <ul spacing="normal">
+      <ul>
         <li>An administrative name that has been assigned to a forwarder. Assigning a name to a forwarder implies the presence of a management application running locally, which handles Operations, Administration and Management (OAM) operations.</li>
         <li>A name that includes an application's namespace as a prefix.</li>
         <li>A named object that might reside in some in-network storage.</li>
       </ul>
 
       <t>In order to provide stable and reliable diagnostics, it is desirable that the
-      packet encoding of a traceroute request enable the forwarders to
-      distinguish this request from a normal Interest, while also preserving
-      forwarding behavior as similar as possible to that for an
-      Interest packet. In the same way, the encoding of a traceroute reply
-      should allow for processing as similar as possible to that of a data
-      packet by the forwarders.</t>
+      packet encoding of a traceroute request enable the forwarders to distinguish this request from a normal Interest, while also preserving forwarding behavior as similar as possible to that for an Interest packet. In the same way, the encoding of a traceroute reply should allow for processing as similar as possible to that of a data packet by the forwarders.</t>
 
-      <t>The term "traceroute session" is used for an iterative process
-        during which an endpoint client application generates
-        a number of traceroute requests to successively traverse more distant hops in the path
-        until it receives a final traceroute reply from a forwarder. It is
-        desirable that ICN traceroute be able to discover a number of paths towards the
-        expressed prefix within the same session or subsequent sessions. To discover
-        all the hops in a path, we need a mechanism (Interest Steering) to steer
-        requests along different paths. Such a capability was initially published in  <xref target="PATHSTEERING" format="default"/> and has been specified for CCNx in <xref target="I-D.draft-oran-icnrg-pathsteering"/>.</t>
+      <t>The term "traceroute session" is used for an iterative process during which an endpoint client application generates a number of traceroute requests to successively traverse more distant hops in the path until it receives a final traceroute reply from a forwarder. It is desirable that ICN traceroute be able to discover a number of paths towards the expressed prefix within the same session or subsequent sessions. To discover all the hops in a path, we need a mechanism (Interest Steering) to steer requests along different paths. Such a capability was initially published in  <xref target="PATHSTEERING" format="default"/> and has been specified for CCNx and NDN in <xref target="I-D.irtf-icnrg-pathsteering"/>.</t>
 
       <t>It is also important, in the case of traceroute requests for the same prefix from different sources, to have a mechanism to avoid aggregating those requests in the PIT. To this end, we need some encoding in the traceroute requests to make each request for a common prefix unique, and hence avoid PIT aggregation and further enabling the exact matching of a response with a particular traceroute packet.</t>
 
-      <t>The packet types and format are presented in <xref target="format" format="default"/>.
+      <t>The packet types and format are presented in <xref target="format"/>.
       The procedures, e.g. the procedures for determining and indicating that
-      a destination has been reached, are specified in <xref target="forwarder" format="default"/>.</t>
+      a destination has been reached, are specified in <xref target="forwarder"/>.</t>
     </section>
 
-    <section anchor="format" numbered="true" toc="default">
-      <name>ICN Traceroute CCNx Packet Format</name>
-      <t>In this section, we present the CCNx packet format
-      <xref target="RFC8609" format="default"/> of ICN traceroute, where messages exist within outermost containments (packets). Specifically, we propose two types of traceroute packets, a traceroute request and a traceroute reply packet  type. </t>
+    <section anchor="format"><name>ICN Traceroute CCNx Packet Format</name>
+      <t>In this section, we present the CCNx packet format <xref target="RFC8609"/> of ICN traceroute, where messages exist within outermost containments (packets). Specifically, we propose two types of traceroute packets, a traceroute request and a traceroute reply packet type. </t>
 
-      <section numbered="true" toc="default">
-        <name>ICN Traceroute Request CCNx Packet Format</name>
+      <section><name>ICN Traceroute Request CCNx Packet Format</name>
         <t>The format of the traceroute request packet is presented below:</t>
 
         <figure align="center">
         <name>Traceroute Request CCNx Packet Format</name>
         <artwork align="left" name="" type="" alt=""><![CDATA[
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
-
  +---------------+---------------+---------------+---------------+
  |               |               |                               |
  |    Version    |   TrRequest   |         PacketLength          |
@@ -320,24 +220,22 @@
  |               |               |               |               |
  +---------------+---------------+---------------+---------------+
  /                                                               /
- /                       Path label TLV			 										 /
+ /                        Path label TLV                         /
  /                                                               /
  +---------------+---------------+---------------+---------------+
  |                                                               |
  |               Traceroute Request Message TLVs                 |
  |                                                               |
  +---------------+---------------+---------------+---------------+
-
-            ]]></artwork>
+]]></artwork>
         </figure>
 
         <t>The existing packet header fields have similar functionality to the header fields of a CCNx Interest packet. The value of the packet type field is TrRequest. The exact numeric value of this field type is to be assigned in the Packet Type IANA Registry for CCNx (see section 4.1 of <xref target="RFC8609" format="default"/>.</t>
 
-        <t>Compared to the typical format of a CCNx packet header
-      <xref target="RFC8609" format="default"/>, there is a new  optional fixed header added to the packet header:</t>
+        <t>Compared to the typical format of a CCNx packet header <xref target="RFC8609"/>, there is a new  optional fixed header added to the packet header:</t>
 
-        <ul spacing="normal">
-          <li>A Path Steering hop-by-hop header TLV, which is constructed hop-by-hop	 in the traceroute reply and included in the traceroute request to steer consecutive requests expressed by a client towards a common or different forwarding paths. The Path label TLV is specified in <xref target="I-D.draft-oran-icnrg-pathsteering"/> </li>
+        <ul>
+          <li>A Path Steering hop-by-hop header TLV, which is constructed hop-by-hop	 in the traceroute reply and included in the traceroute request to steer consecutive requests expressed by a client towards a common or different forwarding paths. The Path label TLV is specified in <xref target="I-D.irtf-icnrg-pathsteering"/> </li>
         </ul>
 
         <t>The message of a traceroute request is presented below:</t>
@@ -346,48 +244,41 @@
         <name>Traceroute Request Message Format</name>
         <artwork align="left" name="" type="" alt=""><![CDATA[
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
-
  +---------------+---------------+---------------+---------------+
  |                               |                               |
  |        MessageType = 1        |          MessageLength        |
  |                               |                               |
  +---------------+---------------+---------------+---------------+
  |                                                               |
- |			    Name TLV                             |
+ |                           Name TLV                            |
  |                                                               |
  +---------------+---------------+---------------+---------------+
-
-            ]]></artwork>
+]]></artwork>
         </figure>
 
-        <t>The traceroute request message is of type Interest in order to leverage the Interest forwarding behavior provided by the network. The Name TLV has the structure described in <xref target="RFC8609" format="default"/>. The name consists of the target (destination)
-       prefix appended with a nonce typed name component as its last component (to avoid Interest aggregation and allow exact matching of requests with responses). The value of this TLV is a 64-bit nonce.</t>
+        <t>The traceroute request message is of type Interest in order to leverage the Interest forwarding behavior provided by the network. The Name TLV has the structure described in <xref target="RFC8609"/>. The name consists of the target (destination) prefix appended with a nonce typed name component as its last component (to avoid Interest aggregation and allow exact matching of requests with responses). The value of this TLV is a 64-bit nonce.</t>
 
        <figure align="center">
        <name>Name Nonce Typed Component TLV</name>
         <artwork align="left" name="" type="" alt=""><![CDATA[
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
-
  +---------------+---------------+---------------+---------------+
  |                               |                               |
  |        Name_Nonce_Type        |      Name_Nonce_Length = 8    |
  |                               |                               |
  +---------------+---------------+---------------+---------------+
- |							         |
  |                                                               |
  |                                                               |
- |		         Name_Nonce_Value  		         |
+ |                                                               |
+ |                        Name_Nonce_Value                       |
  |                                                               |
  |                                                               |
  +---------------+---------------+---------------+---------------+
-
-            ]]></artwork>
+]]></artwork>
        </figure>
-      </section>
+    </section>
 
-      <!-- This PI places the pagebreak correctly (before the section title) in the text output. -->
-
-    <section anchor="CCNxReply" numbered="true" toc="default">
+    <section anchor="CCNxReply">
         <name>Traceroute Reply CCNx Packet Format</name>
         <t>The format of a traceroute reply packet is presented below:</t>
 
@@ -395,7 +286,6 @@
         <name>Traceroute Reply CCNx Packet Format</name>
         <artwork align="left" name="" type="" alt=""><![CDATA[
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
-
  +---------------+---------------+---------------+---------------+
  |               |               |                               |
  |    Version    |    TrReply 	 |          PacketLength         |
@@ -406,47 +296,42 @@
  |                               |               |               |
  +---------------+---------------+---------------+---------------+
  |                                                               |
- |                        Path label TLV			 |
+ |                       Path label TLV                          |
  |                                                               |
  +---------------+---------------+---------------+---------------+
  |                                                               |
  |                 Traceroute Reply Message TLVs                 |
  |                                                               |
  +---------------+---------------+---------------+---------------+
-
-            ]]></artwork>
+]]></artwork>
         </figure>
 
-        <t>The header of a traceroute reply consists of the header fields of a CCNx Content  Object and a hop-by-hop path steering TLV. The value of the packet type field is TrReply. The exact numeric value of this field type is to be assigned in the Packet Type IANA Registry for CCNx
-       (see section 4.1 of <xref target="RFC8609" format="default"/>.</t>
+        <t>The header of a traceroute reply consists of the header fields of a CCNx Content  Object and a hop-by-hop path steering TLV. The value of the packet type field is TrReply. The exact numeric value of this field type is to be assigned in the Packet Type IANA Registry for CCNx (see section 4.1 of <xref target="RFC8609"/>.</t>
 
-        <t>A traceroute reply message is of type Content Object, contains a Name TLV (name of the corresponding traceroute request), a PayloadType TLV and an ExpiryTime TLV with a value of 0 to indicate that replies must
-       not be returned from network caches.</t>
+        <t>A traceroute reply message is of type Content Object, contains a Name TLV (name of the corresponding traceroute request), a PayloadType TLV and an ExpiryTime TLV with a value of 0 to indicate that replies must not be returned from network caches.</t>
 
        <figure align="center">
        <name>Traceroute Reply Message Format</name>
         <artwork align="left" name="" type="" alt=""><![CDATA[
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
-
  +---------------+---------------+---------------+---------------+
  |                               |                               |
  |        MessageType = 2        |          MessageLength        |
  |                               |                               |
  +---------------+---------------+---------------+---------------+
  |                                                               |
- |                	      Name TLV	 		         |
+ |                           Name TLV                            |
  |                                                               |
  +---------------+---------------+---------------+---------------+
  |                                                               |
- |			   PayloadType TLV 		         |
+ |                        PayloadType TLV                        |
  |                                                               |
  +---------------+---------------+---------------+---------------+
  |                                                               |
- |			   ExpiryTime TLV 			 |
+ |                         ExpiryTime TLV                        |
  |                                                               |
  +---------------+---------------+---------------+---------------+
-
-            ]]></artwork>
+]]></artwork>
         </figure>
 
         <t>The PayloadType TLV is presented below. It is of type T_PAYLOADTYPE_DATA, and the data schema consists of 3 TLVs:</t>
@@ -460,22 +345,21 @@
         <name>Traceroute Reply Message Format</name>
         <artwork align="left" name="" type="" alt=""><![CDATA[
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
-
  +---------------+---------------+---------------+---------------+
  |                               |                               |
  |       T_PAYLOADTYPE_DATA      |             Length            |
  |                               |                               |
  +---------------+---------------+---------------+---------------+
  |                                                               |
- |	                Sender's Name TLV	 		 |
+ |                      Sender's Name TLV                        |
  |                                                               |
  +---------------+---------------+---------------+---------------+
  |                                                               |
- |		      Sender's Signature TLV	 	         |
+ |                    Sender's Signature TLV                     |
  |                                                               |
  +---------------+---------------+---------------+---------------+
  |                                                               |
- |		         TrReply Code TLV                        |
+ |                       TrReply Code TLV                        |
  |                                                               |
  +---------------+---------------+---------------+---------------+
 
@@ -496,27 +380,24 @@
         <name>TrReply Code TLV</name>
         <artwork align="left" name="" type="" alt=""><![CDATA[
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
-
  +---------------+---------------+---------------+---------------+
  |                               |                               |
  |       TrReply_Code_Type       |    TrReply_Code_Length = 2    |
  |                               |                               |
  +---------------+---------------+---------------+---------------+
- |		                           		         |
- |                     TrReply_Code_Value                        |
+ |                                                               |
+ |                      TrReply_Code_Value                       |
+ |                                                               |
  +---------------+---------------+---------------+---------------+
-
-            ]]></artwork>
+]]></artwork>
         </figure>
-      </section>
-
     </section>
-    <section numbered="true" toc="default">
-      <name>ICN Traceroute NDN Packet Format</name>
-      <t>In this section, we present the ICN traceroute Request and Reply Format according to the NDN packet specification <xref target="NDNTLV" format="default"/>.</t>
+  </section>
 
-      <section numbered="true" toc="default">
-        <name>ICN Traceroute Request NDN Packet Format</name>
+    <section><name>ICN Traceroute NDN Packet Format</name>
+      <t>In this section, we present the ICN traceroute Request and Reply Format according to the NDN packet specification <xref target="NDNTLV"/>.</t>
+
+      <section><name>ICN Traceroute Request NDN Packet Format</name>
         <t>A traceroute request is encoded as an NDN Interest packet. Its format is the following:</t>
 
         <figure align="center">
@@ -532,8 +413,10 @@
         </figure>
 
         <t>The name of a request consists of the target name, a nonce value (it can be the value of the Nonce field) and the suffix "traceroute" to denote that this Interest is a traceroute request (added as a KeywordNameComponent). When the "ApplicationParameters" element is present, a ParametersSha256DigestComponent is added as the last name component.</t>
+        
         <t>A traceroute request MAY carry a Path label TLV in the <xref target="NDNLPv2">NDN Link Adaptation Protocol</xref> as specified in <xref target="I-D.irtf-icnrg-pathsteering"/>.</t>
-        <t>Since the NDN packet format does not provide a mechanism to prevent the network from caching specific  data packets, we instead use the MustBeFresh selector for requests (in combination with a Freshness Period TLV of value 1 for replies) to avoid fetching cached traceroute replies with a freshness period that has expired <xref target="REALTIME" format="default"/>.</t>
+        
+        <t>Since the NDN packet format does not provide a mechanism to prevent the network from caching specific  data packets, we instead use the MustBeFresh selector for requests (in combination with a Freshness Period TLV of value 1 for replies) to avoid fetching cached traceroute replies with a freshness period that has expired <xref target="REALTIME"/>.</t>
 
       </section>
       <section numbered="true" toc="default">
@@ -551,9 +434,7 @@
 	        ]]></artwork>
         </figure>
 
-        <t>A traceroute reply MAY carry a Path label TLV in the <xref target="NDNLPv2">NDN Link Adaptation Protocol</xref>
-					as specified in <xref target="I-D.irtf-icnrg-pathsteering"/>, since it might be modified in a hop-by-hop fashion by
-      the forwarders along the reverse path.</t>
+        <t>A traceroute reply MAY carry a Path label TLV in the <xref target="NDNLPv2">NDN Link Adaptation Protocol</xref>	as specified in <xref target="I-D.irtf-icnrg-pathsteering"/>, since it might be modified in a hop-by-hop fashion by the forwarders along the reverse path.</t>
 
         <t>The name of a traceroute reply is the name of the corresponding traceroute request, while the format of the MetaInfo field is the following:</t>
 
@@ -570,7 +451,7 @@
 
         <t>The content of a traceroute reply consists of the following 2 TLVs: Sender's name (an NDN Name TLV) and Traceroute Reply Code. There is no need to have a separate TLV for the sender's signature in the content of the reply, since every NDN data packet carries the signature of the data producer.</t>
 
-        <t>The Traceroute Reply Code TLV format is the following (with the values specified in  <xref target="CCNxReply" format="default"/>):</t>
+        <t>The Traceroute Reply Code TLV format is the following (with the values specified in <xref target="CCNxReply"/>):</t>
 
         <figure align="center">
         <name>Traceroute Reply Code TLV</name>
@@ -643,36 +524,21 @@
 			<t>The exact numeric values of the field types of Traceroute requests and Traceroute replies are to be assigned in the Packet Type IANA Registry for CCNx
 			(see section 4.1 of <xref target="RFC8569" format="default"/>. </t>
 		</section>
-  </middle>
-  <!--  *****BACK MATTER ***** -->
+</middle>
 
-  <back>
-    <!-- References split into informative and normative -->
+<back>
+  <references><name>References</name>
+  
+	  <references><name>Normative References</name>
+	    <?rfc include="reference.RFC.2119.xml"?>
+    	<?rfc include="reference.RFC.8569.xml"?>
+    	<?rfc include="reference.RFC.8609.xml"?>
+    	<?rfc include="reference.RFC.8793.xml"?>
+	  </references>
 
-    <!-- There are 2 ways to insert reference entries from the citation libraries:
-     1. define an ENTITY at the top, and use "ampersand character"RFC2629; here (as shown)
-     2. simply use a PI "less than character"?rfc include="reference.RFC.2119.xml"?> here
-        (for I-Ds: include="reference.I-D.narten-iana-considerations-rfc2434bis.xml")
-
-     Both are cited textually in the same manner: by using xref elements.
-     If you use the PI option, xml2rfc will, by default, try to find included files in the same
-     directory as the including file. You can also define the XML_LIBRARY environment variable
-     with a value containing a set of directories to search.  These can be either in the local
-     filing system or remote ones accessed by http (http://domain/dir/... ).-->
-
-    <references>
-      <name>References</name>
-      <references>
-      	<name>Normative References</name>
-	      <xi:include href="https://xml2rfc.tools.ietf.org/public/rfc/bibxml/reference.RFC.2119.xml"/>
-    	 <xi:include href="https://xml2rfc.tools.ietf.org/public/rfc/bibxml/reference.RFC.8569.xml"/>
-      	<xi:include href="https://xml2rfc.tools.ietf.org/public/rfc/bibxml/reference.RFC.8609.xml"/>
-	</references>
-
-      <references>
-        <name>Informative References</name>
-		        <!-- A reference written by by an organization not a person. -->
-		 <xi:include href="https://xml2rfc.tools.ietf.org/public/rfc/bibxml3/reference.I-D.draft-irtf-icnrg-ccninfo.xml"/>
+    <references><name>Informative References</name>
+	    <?rfc include="reference.I-D.irtf-icnrg-ccninfo.xml"?>
+ 		<?rfc include="reference.I-D.irtf-icnrg-pathsteering.xml"?>
 
         <reference anchor="NDNTLV" target="https://named-data.net/doc/NDN-packet-spec/current/">
           <front>
@@ -682,6 +548,14 @@
             </author>
             <date year="2021"/>
           </front>
+        </reference>
+        
+		<reference anchor="NDNLPv2" target="https://redmine.named-data.net/projects/nfd/wiki/NDNLPv2">
+           <front>
+             <title>Named Data Networking Link Adaptation Protocol v2</title>
+             <author surname="NDN team"/>
+             <date>various</date>
+           </front>
         </reference>
 
         <reference anchor="SNAMP">
@@ -711,7 +585,6 @@
           </front>
           <refcontent>in Proceedings of the 4th ACM Conference on Information-Centric Networking</refcontent>
         </reference>
-		<xi:include href="https://xml2rfc.tools.ietf.org/public/rfc/bibxml3/reference.I-D.draft-irtf-icnrg-pathsteering-00.xml"/>
 
         <reference anchor="REALTIME">
           <front>
@@ -732,19 +605,10 @@
           </front>
           <refcontent>in Proceedings of the 1st IEEE International Conference on Hot Topics in Information-Centric Networking</refcontent>
         </reference>
+	</references>
+  </references>
 
-				<reference anchor="NDNLPv2" target="https://redmine.named-data.net/projects/nfd/wiki/NDNLPv2">
-           <front>
-             <title>Named Data Networking Link Adaptation Protocol v2</title>
-             <author surname="NDN team"/>
-             <date>various</date>
-           </front>
-        </reference>
-
-    </references>
-    </references>
-
-    <section anchor="app-additional" numbered="true" toc="default">
+    <section anchor="app-additional">
       <name>Traceroute Client Application (Consumer) Operation</name>
       <t>This section is an informative appendix regarding the proposed traceroute client operation.</t>
 
@@ -762,11 +626,8 @@
 
       <t>In the case that a traceroute reply is not received for a request within a certain time interval (lifetime of the request), the client should time-out and send a new request with a new nonce value up to a maximum number of requests to be sent specified by the user.</t>
     </section>
-    <!-- Change Log
-
-  -->
   </back>
 </rfc>
 <!-- Change Log
-v03 2021-04-30	DRO Update references
+v07 202-10-17	DRO Update references, fix NDN encoding
 	-->
