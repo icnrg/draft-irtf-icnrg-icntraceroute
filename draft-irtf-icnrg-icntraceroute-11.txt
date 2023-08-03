@@ -5,13 +5,13 @@
 ICNRG                                                      S. Mastorakis
 Internet-Draft                                  University of Notre Dame
 Intended status: Experimental                                    D. Oran
-Expires: 28 January 2024             Network Systems Research and Design
+Expires: 4 February 2024             Network Systems Research and Design
                                                             I. Moiseenko
                                                                Apple Inc
                                                                J. Gibson
                                                                 R. Droms
                                                             Unaffiliated
-                                                            27 July 2023
+                                                           3 August 2023
 
 
                  ICN Traceroute Protocol Specification
@@ -40,7 +40,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 28 January 2024.
+   This Internet-Draft will expire on 4 February 2024.
 
 Copyright Notice
 
@@ -53,9 +53,9 @@ Copyright Notice
 
 
 
-Mastorakis, et al.       Expires 28 January 2024                [Page 1]
+Mastorakis, et al.       Expires 4 February 2024                [Page 1]
 
-Internet-Draft               ICN Traceroute                    July 2023
+Internet-Draft               ICN Traceroute                  August 2023
 
 
    This document is subject to BCP 78 and the IETF Trust's Legal
@@ -109,9 +109,9 @@ Table of Contents
 
 
 
-Mastorakis, et al.       Expires 28 January 2024                [Page 2]
+Mastorakis, et al.       Expires 4 February 2024                [Page 2]
 
-Internet-Draft               ICN Traceroute                    July 2023
+Internet-Draft               ICN Traceroute                  August 2023
 
 
    change accordingly.  ICN Traceroute is designed as a tool to
@@ -136,7 +136,9 @@ Internet-Draft               ICN Traceroute                    July 2023
 
    The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
    "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this
-   document are to be interpreted as described in [RFC2119].
+   document are to be interpreted as described in BCP 14 [RFC2119]
+   [RFC8174] when, and only when, they appear in all capitals, as shown
+   here.
 
 2.  Background on IP-Based Traceroute Operation
 
@@ -163,11 +165,9 @@ Internet-Draft               ICN Traceroute                    July 2023
 
 
 
-
-
-Mastorakis, et al.       Expires 28 January 2024                [Page 3]
+Mastorakis, et al.       Expires 4 February 2024                [Page 3]
 
-Internet-Draft               ICN Traceroute                    July 2023
+Internet-Draft               ICN Traceroute                  August 2023
 
 
 3.  Traceroute Functionality Challenges and Opportunities in ICN
@@ -221,9 +221,9 @@ Internet-Draft               ICN Traceroute                    July 2023
 
 
 
-Mastorakis, et al.       Expires 28 January 2024                [Page 4]
+Mastorakis, et al.       Expires 4 February 2024                [Page 4]
 
-Internet-Draft               ICN Traceroute                    July 2023
+Internet-Draft               ICN Traceroute                  August 2023
 
 
    *  In the case of multiple Interests with the same name arriving at a
@@ -277,9 +277,9 @@ Internet-Draft               ICN Traceroute                    July 2023
 
 
 
-Mastorakis, et al.       Expires 28 January 2024                [Page 5]
+Mastorakis, et al.       Expires 4 February 2024                [Page 5]
 
-Internet-Draft               ICN Traceroute                    July 2023
+Internet-Draft               ICN Traceroute                  August 2023
 
 
    The term "traceroute session" is used for an iterative process during
@@ -333,9 +333,9 @@ Internet-Draft               ICN Traceroute                    July 2023
 
 
 
-Mastorakis, et al.       Expires 28 January 2024                [Page 6]
+Mastorakis, et al.       Expires 4 February 2024                [Page 6]
 
-Internet-Draft               ICN Traceroute                    July 2023
+Internet-Draft               ICN Traceroute                  August 2023
 
 
     0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
@@ -389,9 +389,9 @@ Internet-Draft               ICN Traceroute                    July 2023
 
 
 
-Mastorakis, et al.       Expires 28 January 2024                [Page 7]
+Mastorakis, et al.       Expires 4 February 2024                [Page 7]
 
-Internet-Draft               ICN Traceroute                    July 2023
+Internet-Draft               ICN Traceroute                  August 2023
 
 
    The traceroute request message is of type Interest in order to
@@ -445,9 +445,9 @@ Internet-Draft               ICN Traceroute                    July 2023
 
 
 
-Mastorakis, et al.       Expires 28 January 2024                [Page 8]
+Mastorakis, et al.       Expires 4 February 2024                [Page 8]
 
-Internet-Draft               ICN Traceroute                    July 2023
+Internet-Draft               ICN Traceroute                  August 2023
 
 
     0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
@@ -501,9 +501,9 @@ Internet-Draft               ICN Traceroute                    July 2023
 
 
 
-Mastorakis, et al.       Expires 28 January 2024                [Page 9]
+Mastorakis, et al.       Expires 4 February 2024                [Page 9]
 
-Internet-Draft               ICN Traceroute                    July 2023
+Internet-Draft               ICN Traceroute                  August 2023
 
 
     0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
@@ -557,9 +557,9 @@ Internet-Draft               ICN Traceroute                    July 2023
 
 
 
-Mastorakis, et al.       Expires 28 January 2024               [Page 10]
+Mastorakis, et al.       Expires 4 February 2024               [Page 10]
 
-Internet-Draft               ICN Traceroute                    July 2023
+Internet-Draft               ICN Traceroute                  August 2023
 
 
     0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
@@ -613,9 +613,9 @@ Internet-Draft               ICN Traceroute                    July 2023
 
 
 
-Mastorakis, et al.       Expires 28 January 2024               [Page 11]
+Mastorakis, et al.       Expires 4 February 2024               [Page 11]
 
-Internet-Draft               ICN Traceroute                    July 2023
+Internet-Draft               ICN Traceroute                  August 2023
 
 
     0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
@@ -669,9 +669,9 @@ Internet-Draft               ICN Traceroute                    July 2023
 
 
 
-Mastorakis, et al.       Expires 28 January 2024               [Page 12]
+Mastorakis, et al.       Expires 4 February 2024               [Page 12]
 
-Internet-Draft               ICN Traceroute                    July 2023
+Internet-Draft               ICN Traceroute                  August 2023
 
 
    Since the NDN packet format does not provide a mechanism to prevent
@@ -725,9 +725,9 @@ Internet-Draft               ICN Traceroute                    July 2023
 
 
 
-Mastorakis, et al.       Expires 28 January 2024               [Page 13]
+Mastorakis, et al.       Expires 4 February 2024               [Page 13]
 
-Internet-Draft               ICN Traceroute                    July 2023
+Internet-Draft               ICN Traceroute                  August 2023
 
 
            TrReplyCode = TRREPLYCODE-TLV-TYPE TLV-LENGTH 2*OCTET
@@ -781,9 +781,9 @@ Internet-Draft               ICN Traceroute                    July 2023
 
 
 
-Mastorakis, et al.       Expires 28 January 2024               [Page 14]
+Mastorakis, et al.       Expires 4 February 2024               [Page 14]
 
-Internet-Draft               ICN Traceroute                    July 2023
+Internet-Draft               ICN Traceroute                  August 2023
 
 
    A received traceroute reply will be matched to an existing PIT entry
@@ -837,9 +837,9 @@ Internet-Draft               ICN Traceroute                    July 2023
 
 
 
-Mastorakis, et al.       Expires 28 January 2024               [Page 15]
+Mastorakis, et al.       Expires 4 February 2024               [Page 15]
 
-Internet-Draft               ICN Traceroute                    July 2023
+Internet-Draft               ICN Traceroute                  August 2023
 
 
    The state maintained along the path, where the locally-scoped name is
@@ -893,9 +893,9 @@ Internet-Draft               ICN Traceroute                    July 2023
 
 
 
-Mastorakis, et al.       Expires 28 January 2024               [Page 16]
+Mastorakis, et al.       Expires 4 February 2024               [Page 16]
 
-Internet-Draft               ICN Traceroute                    July 2023
+Internet-Draft               ICN Traceroute                  August 2023
 
 
    prepend the correct routable prefix to the name of an outgoing reply,
@@ -923,6 +923,10 @@ Internet-Draft               ICN Traceroute                    July 2023
               DOI 10.17487/RFC2119, March 1997,
               <https://www.rfc-editor.org/info/rfc2119>.
 
+   [RFC8174]  Leiba, B., "Ambiguity of Uppercase vs Lowercase in RFC
+              2119 Key Words", BCP 14, RFC 8174, DOI 10.17487/RFC8174,
+              May 2017, <https://www.rfc-editor.org/info/rfc8174>.
+
    [RFC8609]  Mosko, M., Solis, I., and C. Wood, "Content-Centric
               Networking (CCNx) Messages in TLV Format", RFC 8609,
               DOI 10.17487/RFC8609, July 2019,
@@ -937,22 +941,25 @@ Internet-Draft               ICN Traceroute                    July 2023
 
 10.2.  Informative References
 
+
+
+
+
+
+
+
+
+Mastorakis, et al.       Expires 4 February 2024               [Page 17]
+
+Internet-Draft               ICN Traceroute                  August 2023
+
+
    [I-D.irtf-icnrg-pathsteering]
               Moiseenko, I. and D. R. Oran, "Path Steering in CCNx and
               NDN", Work in Progress, Internet-Draft, draft-irtf-icnrg-
               pathsteering-03, 23 July 2023,
               <https://datatracker.ietf.org/doc/html/draft-irtf-icnrg-
               pathsteering-03>.
-
-
-
-
-
-
-Mastorakis, et al.       Expires 28 January 2024               [Page 17]
-
-Internet-Draft               ICN Traceroute                    July 2023
-
 
    [NDNLPv2]  "Named Data Networking Link Adaptation Protocol v2",
               various, <https://redmine.named-
@@ -993,6 +1000,16 @@ Appendix A.  Traceroute Client Application (Consumer) Operation
    The client application is responsible for generating traceroute
    requests for prefixes provided by users.
 
+
+
+
+
+
+Mastorakis, et al.       Expires 4 February 2024               [Page 18]
+
+Internet-Draft               ICN Traceroute                  August 2023
+
+
    The overall process can be iterative: the first traceroute request of
    each session will have a HopLimit of value 1 to reach the first hop
    forwarder, the second of value 2 to reach the second hop forwarder
@@ -1002,14 +1019,6 @@ Appendix A.  Traceroute Client Application (Consumer) Operation
    one will typically not include a Path label TLV, since no TLV value
    is known.  After a traceroute reply containing a Path label TLV is
    received, each subsequent request might include the received path
-
-
-
-Mastorakis, et al.       Expires 28 January 2024               [Page 18]
-
-Internet-Draft               ICN Traceroute                    July 2023
-
-
    steering value in the Path label header TLV to drive the requests
    towards a common path as part of checking the network performance.
    To discover more paths, a client can omit the Path label TLV in
@@ -1050,20 +1059,18 @@ Authors' Addresses
    Email: smastor2@nd.edu
 
 
+
+
+Mastorakis, et al.       Expires 4 February 2024               [Page 19]
+
+Internet-Draft               ICN Traceroute                  August 2023
+
+
    Dave Oran
    Network Systems Research and Design
    Cambridge, MA
    United States of America
    Email: daveoran@orandom.net
-
-
-
-
-
-
-Mastorakis, et al.       Expires 28 January 2024               [Page 19]
-
-Internet-Draft               ICN Traceroute                    July 2023
 
 
    Ilya Moiseenko
@@ -1110,11 +1117,4 @@ Internet-Draft               ICN Traceroute                    July 2023
 
 
 
-
-
-
-
-
-
-
-Mastorakis, et al.       Expires 28 January 2024               [Page 20]
+Mastorakis, et al.       Expires 4 February 2024               [Page 20]
